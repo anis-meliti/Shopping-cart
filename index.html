@@ -14,13 +14,12 @@
     <main>
         <section class="shopping-app" id="shopping-app">
             <div class="shopping-bag" id="shopping-bag">
-                <h2>Shopping Bag total :</h2>
-                <div id="total-price"></div>
+                <h3>Shopping Bag total :</h3><span id="total-price"> </span><span>$</span>
             </div>
             <div class="item" id="item">
                 <div class="container">
-                    <button class="button" id="x-btn"></button>
-                    <button class="button" id="fav-btn"></button>
+                    <button class="button" id="x-btn" onclick=" retire()"></button>
+                    <button class="button" id="fav-btn" onclick=" fav()"></button>
                 </div>
                 <img src="./img/img_sneakers.jpg" alt="sneakers image">
                 <div class="">
@@ -28,10 +27,11 @@
                     <p>White</p>
                 </div>
                 <div class="container">
-                    <button class="button" id="plus-btn"></button>
-                    <p id="item-qte">1</p>
-                    <button class="button" id="minus-btn"></button>
-                    <p id="item-price">$549</p>
+                    <button class="button" id="plus-btn" onclick="addItem( 'item_qte1','item-price1','579')"></button>
+                    <p id="item_qte1">0</p>
+                    <button class="button" id="minus-btn"
+                        onclick="retireItem( 'item_qte1','item-price1','579')"></button><span>$</span>
+                    <p id="item-price1">0</p>
                 </div>
 
 
@@ -48,10 +48,11 @@
                     <p>White</p>
                 </div>
                 <div class="container">
-                    <button class="button" id="plus-btn"></button>
-                    <p id="item-qte">1</p>
-                    <button class="button" id="minus-btn"></button>
-                    <p id="item-price">$549</p>
+                    <button class="button" id="plus-btn" onclick="addItem( 'item-qte2','item-price2','870')"></button>
+                    <p id="item-qte2">0</p>
+                    <button class="button" id="minus-btn"
+                        onclick="retireItem( 'item-qte2','item-price2','870')"></button><span>$</span>
+                    <p id="item-price2">0</p>
                 </div>
             </div>
             <div class="item" id="item">
@@ -65,10 +66,12 @@
                     <p>White</p>
                 </div>
                 <div class="container">
-                    <button class="button" id="plus-btn"></button>
-                    <p id="item-qte">1</p>
-                    <button class="button" id="minus-btn"></button>
-                    <p id="item-price">$549</p>
+                    <button class="button" id="plus-btn" onclick="addItem( 'item-qte3','item-price3','349')"></button>
+                    <p id="item-qte3">0</p>
+                    <button class="button" id="minus-btn"
+                        onclick="retireItem( 'item-qte3','item-price3','349')"></button>
+                    <span>$</span>
+                    <p id="item-price3"> 0 </p>
                 </div>
 
 
@@ -77,6 +80,7 @@
 
         </section>
     </main>
+    <footer></footer>
 </body>
 
 </html>
