@@ -13,6 +13,7 @@ main {
 
 .shopping-app {
     display: flex;
+    flex-direction: column;
     width: 990px;
     height: 600px;
     border-radius: 5px;
@@ -28,4 +29,71 @@ main {
 .shopping-bag h2 {
     margin: 2%;
     padding: 1%;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 174px;
+    border-bottom: 1px solid #747474;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 8%;
+    align-items: center
+}
+
+.button {
+    height: 26px;
+    width: 26px;
+    border: none;
+    background-repeat: no-repeat;
+    margin: 9px;
+    padding: 10%;
+
+}
+
+#x-btn {
+    background: url("../img/icons8-circled-x-100.png");
+    background-size: 100%;
+}
+
+#fav-btn {
+    background: url("../img/icons8-heart-outline-100.png");
+    background-size: 100%;
+}
+
+.product-img {
+    height: 100px;
+    width: 100px;
+}
+
+#plus-btn {
+    background: url("../img/icons8-plus-100.png");
+    background-size: 100%;
+}
+
+#minus-btn {
+    background: url("../img/icons8-minus-100.png");
+    background-size: 100%;
+}
+
+#item-qte {
+    margin: 2%;
+}
+
+#item-price {
+    margin-left: 2%;
+}
+
+.item img {
+    width: 200px;
+    height: 160px;
+    margin-left: -19%;
+
 }
