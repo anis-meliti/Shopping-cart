@@ -5,7 +5,6 @@
     <title>Shopping cart</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/all.css">
     <script src="./script/script.js"></script>
 </head>
 
@@ -14,7 +13,7 @@
     <main>
         <section class="shopping-app" id="shopping-app">
             <div class="shopping-bag" id="shopping-bag">
-                <h3>Shopping Bag total :</h3><span id="total-price">0 </span><span>$</span>
+                <h3>Shopping Bag total :<span id="total-price">0 </span><span>$</span></h3>
             </div>
             <div class="item" id="item">
                 <div class="container">
@@ -33,10 +32,10 @@
                 </div>
                 <div class="container">
                     <button class="button" id="plus-btn" onclick="addItem( 'item_qte1','item-price1','579')"></button>
-                    <p id="item_qte1">0</p>
+                    <p class="item-qte" id="item_qte1">0</p>
                     <button class="button" id="minus-btn"
                         onclick="retireItem( 'item_qte1','item-price1','579')"></button><span>$</span>
-                    <p id="item-price1">0</p>
+                    <p class="item-price" id="item-price1">0</p>
                 </div>
 
 
@@ -59,10 +58,10 @@
                 </div>
                 <div class="container">
                     <button class="button" id="plus-btn" onclick="addItem( 'item-qte2','item-price2','870')"></button>
-                    <p id="item-qte2">0</p>
+                    <p class="item-qte" id="item-qte2">0</p>
                     <button class="button" id="minus-btn"
                         onclick="retireItem( 'item-qte2','item-price2','870')"></button><span>$</span>
-                    <p id="item-price2">0</p>
+                    <span class="item-price" id="item-price2">0</span>
                 </div>
             </div>
             <div class="item" id="item3">
@@ -82,11 +81,11 @@
                 </div>
                 <div class="container">
                     <button class="button" id="plus-btn" onclick="addItem( 'item-qte3','item-price3','349')"></button>
-                    <p id="item-qte3">0</p>
+                    <p class="item-qte" id="item-qte3">0</p>
                     <button class="button" id="minus-btn"
                         onclick="retireItem( 'item-qte3','item-price3','349')"></button>
                     <span>$</span>
-                    <p id="item-price3"> 0 </p>
+                    <p class="item-price" id="item-price3"> 0 </p>
                 </div>
 
 

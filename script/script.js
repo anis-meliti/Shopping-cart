@@ -3,14 +3,13 @@ const addItem = (pHolder, pChange, price) => {
     // increment item quantite
     document.getElementById(pHolder).innerText = Number(qte) + 1;
     // item total price
-    let itemTotalPrice = document.getElementById(pChange).innerText = Number(document.getElementById(pHolder).innerText) * Number(price);
-    let TotalPrice = document.getElementById("total-price").innerText;
+    document.getElementById(pChange).innerText = Number(document.getElementById(pHolder).innerText) * Number(price);
     // total price
-    document.getElementById("total-price").innerText = Number(TotalPrice) + Number(document.getElementById(pChange).innerText);
 
-
+    document.getElementById("total-price").innerText = Number(document.getElementById("total-price").innerText) + Number(price);
 }
 const retireItem = (pHolder, pChange, price) => {
+    // let totalPrice = 0;
     let qte = document.getElementById(pHolder).innerText;
     // Decrement item quantite
     if (qte > 0)
@@ -19,10 +18,12 @@ const retireItem = (pHolder, pChange, price) => {
     // item total price
     let itemTotalPrice = document.getElementById(pChange).innerText = Number(document.getElementById(pHolder).innerText) * Number(price);
     // total price
-    let totalPrice = document.getElementById("total-price").innerText;
-    console.log(totalPrice)
-    document.getElementById("total-price").innerText = (Number(totalPrice) - Number(document.getElementById(pChange).innerText));
-    console.log(document.getElementById("total-price").innerText)
+    if (document.getElementById("total-price").innerText == 0) {
+        document.getElementById("total-price").innerText
+    } else {
+        document.getElementById("total-price").innerText = Number(document.getElementById("total-price").innerText) - Number(price);
+    }
+
 }
 const fav = (btnNumber) => {
     let favItem = document.getElementById(btnNumber);
@@ -36,6 +37,5 @@ const fav = (btnNumber) => {
 const retire = (itemNumber) => {
     let delItem = document.getElementById(itemNumber);
     delItem.remove();
-
 
 }
