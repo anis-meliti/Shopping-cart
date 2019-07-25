@@ -56,17 +56,18 @@ main {
 }
 
 .button {
-    height: 26px;
-    width: 26px;
+    height: 22px;
+    width: 22px;
     border: none;
     background-repeat: no-repeat;
     margin: 9px;
     padding: 10%;
 
+
 }
 
 #x-btn {
-    background: url("../img/icons8-circled-x-100.png");
+    background: url("../img/delete-cross.png");
     background-size: 100%;
 }
 
@@ -78,12 +79,12 @@ main {
 }
 
 #plus-btn {
-    background: url("../img/icons8-plus-100.png");
+    background: url("../img/add.png");
     background-size: 100%;
 }
 
 #minus-btn {
-    background: url("../img/icons8-minus-100.png");
+    background: url("../img/substract.png");
     background-size: 100%;
 }
 
