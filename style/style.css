@@ -70,10 +70,7 @@ main {
     background-size: 100%;
 }
 
-#fav-btn {
-    background: url("../img/icons8-heart-outline-100.png");
-    background-size: 100%;
-}
+
 
 .product-img {
     height: 100px;

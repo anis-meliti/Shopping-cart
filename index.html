@@ -14,12 +14,17 @@
     <main>
         <section class="shopping-app" id="shopping-app">
             <div class="shopping-bag" id="shopping-bag">
-                <h3>Shopping Bag total :</h3><span id="total-price"> </span><span>$</span>
+                <h3>Shopping Bag total :</h3><span id="total-price">0 </span><span>$</span>
             </div>
             <div class="item" id="item">
                 <div class="container">
-                    <button class="button" id="x-btn" onclick=" retire()"></button>
-                    <button class="button" id="fav-btn" onclick=" fav()"></button>
+                    <button class="button" id="x-btn" onclick=" retire('item')"></button>
+                    <svg id="fav-btn" onclick=" fav('fav-btn')" xmlns="http://www.w3.org/2000/svg" width="26"
+                        height="26" fill="grey" viewbox="0 0 24 24">
+                        <path
+                            d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z" />
+
+                    </svg>
                 </div>
                 <img src="./img/img_sneakers.jpg" alt="sneakers image">
                 <div class="">
@@ -36,10 +41,15 @@
 
 
             </div>
-            <div class="item" id="item">
+            <div class="item" id="item2">
                 <div class="container">
-                    <button class="button" id="x-btn"></button>
-                    <button class="button" id="fav-btn"></button>
+                    <button class="button" id="x-btn" onclick=" retire('item2') "></button>
+                    <svg id="fav-btn2" onclick=" fav('fav-btn2')" xmlns="http://www.w3.org/2000/svg" width="26"
+                        height="26" fill="grey" viewbox="0 0 24 24">
+                        <path
+                            d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z" />
+
+                    </svg>
                 </div>
                 <img src="./img/adidas-campus-homme-clear-brownoff-whitechalk-white-sneakers-basses.jpg"
                     alt="adidas sneakers image">
@@ -55,10 +65,15 @@
                     <p id="item-price2">0</p>
                 </div>
             </div>
-            <div class="item" id="item">
+            <div class="item" id="item3">
                 <div class="container">
-                    <button class="button" id="x-btn"></button>
-                    <button class="button" id="fav-btn"></button>
+                    <button class="button" id="x-btn" onclick=" retire('item3')"></button>
+                    <svg id="fav-btn3" onclick=" fav('item3')" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                        fill="grey" viewbox="0 0 24 24">
+                        <path
+                            d="M12 21.35l-1.45-1.32c-5.15-4.67-8.55-7.75-8.55-11.53 0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54l-1.45 1.31z" />
+
+                    </svg>
                 </div>
                 <img src="./img/gucci-scarf-190677a100a_1600x.jpg" alt="sneakers image">
                 <div class="">
@@ -76,10 +91,9 @@
 
 
             </div>
-
-
         </section>
     </main>
+
     <footer></footer>
 </body>
 
